@@ -36,6 +36,8 @@ Making the website translatable in three languages :
 DONE:
 
 -Basic PHP page with page structure
+
 -Temporary CSS
+
 -Placeholder function getTranslation($section, $lang)  *$lang could be changed to global*
 
