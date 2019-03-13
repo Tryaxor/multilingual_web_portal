@@ -15,35 +15,35 @@
     <main>
         <article>
             <header>
-                <h2><?getTranslation("title1", $lang)?></h2>
+                <h2><?getTranslation("title1")?></h2>
                 <p></p>
             </header>
             <div class="article_main">
-                <h3><?getTranslation("title1_1", $lang);?></h3>
+                <h3><?getTranslation("title1_1");?></h3>
                 
-                <p>><?getTranslation("txt1_1", $lang);?></p>
+                <p><?getTranslation("txt1_1");?></p>
             </div>
             <footer>
-                <p><?getTranslation("footer1", $lang);?></p>
+                <p><?getTranslation("footer1");?></p>
             </footer>
         </article>
         
         <article>
             <header>
-                <h2><?getTranslation("title2", $lang)?></h2>
+                <h2><?getTranslation("title2")?></h2>
                 <p></p>
             </header>
             <div class="article_main">
-                <h3><?getTranslation("title2_1", $lang)?></h3>
+                <h3><?getTranslation("title2_1")?></h3>
                 
-                <p><?getTranslation("txt2_1", $lang);?></p>
+                <p><?getTranslation("txt2_1");?></p>
                 
-                <h3><?getTranslation("title2_2", $lang)?></h3>
+                <h3><?getTranslation("title2_2")?></h3>
                 
-                <p><?getTranslation("txt2_2", $lang);?></p>
+                <p><?getTranslation("txt2_2");?></p>
             </div>
             <footer>
-                <p><?getTranslation("footer2", $lang);?></p>
+                <p><?getTranslation("footer2");?></p>
             </footer>
         </article>
 
