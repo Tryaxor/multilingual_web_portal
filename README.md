@@ -5,8 +5,6 @@ TODO :
 
 Creating and managing accounts:
 
-*Setup host for database and website
-
 *Create a database to store accounts (login, password, [skills])     skills(id, skill1, skill2, …, self-described_skills) (SQL)
 
 *Add an account through a UI (php -> modifying the database)
@@ -40,4 +38,6 @@ DONE:
 -Temporary CSS
 
 -Placeholder function getTranslation($section, $lang)  *$lang could be changed to global*
+
+-Setup host for database and website
 
