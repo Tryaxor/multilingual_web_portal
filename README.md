@@ -41,3 +41,5 @@ DONE:
 
 -Setup host for database and website
 
+-UI to sign in/ sign up
+
