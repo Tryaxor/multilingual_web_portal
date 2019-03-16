@@ -17,9 +17,6 @@ function setup() {
     span = document.getElementsByClassName("close");
 
     for (var i = 0; i < modal.length; i++) {
-        console.log("modal style" + i + " : " + modal[i].style.display);
-        console.log("btn " + i + " : " + btn[i]);
-        console.log("span " + i + " : " + span[i]);
         
         btn[i].indx = i;
         modal[i].indx = i;
