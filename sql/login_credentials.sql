@@ -1,0 +1,72 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.3
+-- https://www.phpmyadmin.net/
+--
+-- Hôte : ronanroyefdigidb.mysql.db
+-- Généré le :  mar. 19 mars 2019 à 22:43
+-- Version du serveur :  5.6.42-log
+-- Version de PHP :  5.6.39
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de données :  `ronanroyefdigidb`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `login_credentials`
+--
+
+CREATE TABLE `login_credentials` (
+  `id` int(11) NOT NULL,
+  `username` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `passwordHash` binary(64) NOT NULL,
+  `firstName` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `lastName` varchar(50) CHARACTER SET utf8 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `login_credentials`
+--
+
+INSERT INTO `login_credentials` (`id`, `username`, `passwordHash`, `firstName`, `lastName`) VALUES
+(1, 'root', 0x38633639373665356235343130343135626465393038626434646565313564666231363761396338373366633462623861383166366632616234343861393138, 'root', 'admin'),
+(7, 'user2', 0x64633866666462663237333664626466333935303830313761633539346530643036396633656565396230663239656365323536616137643833316639656636, 'second', 'two'),
+(8, '3', 0x34653037343038353632626564623862363063653035633164656366653361643136623732323330393637646530316636343062376534373239623439666365, '3', '3'),
+(9, 'amir', 0x38643936396565663665636164336332396133613632393238306536383663663063336635643561383661666633636131323032306339323361646336633932, 'amir', 'rima'),
+(10, 'newuser2', 0x35393934343731616262303131313261666363313831353966366363373462346635313162393938303664613539623363616635613963313733636163666335, 'mitsos', 'trele');
+
+--
+-- Index pour les tables déchargées
+--
+
+--
+-- Index pour la table `login_credentials`
+--
+ALTER TABLE `login_credentials`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT pour les tables déchargées
+--
+
+--
+-- AUTO_INCREMENT pour la table `login_credentials`
+--
+ALTER TABLE `login_credentials`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
